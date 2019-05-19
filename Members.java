@@ -91,7 +91,7 @@ public abstract class Members
         String first_name = s.next();
 
         currentIdNumber++;
-        points == 50;
+        points = points + 50;
     }
 
  }
