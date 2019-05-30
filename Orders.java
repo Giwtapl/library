@@ -1,8 +1,8 @@
-import java.util.Scanner
+import java.util.Scanner;
 
 public class Orders 
 {
-    private int order_ID;
+    private int orders_ID;
     private double balance;
     private double amount;
     private int copies;
@@ -11,7 +11,7 @@ public class Orders
 
     static int order_ID = 0;
 
-    Scanner s = new Scanner ( System.in)
+    Scanner s = new Scanner ( System.in);
 
     public Orders(int ID , double x , int copy , double cash_balance , String text)
     {
@@ -24,7 +24,7 @@ public class Orders
 
     public void checkBookList ()
     {
-      System.out.println("You should check the Book List from your Suppliers!")
+      System.out.println("You should check the Book List from your Suppliers!");
     }
 
     public void setCopies() 
@@ -37,8 +37,8 @@ public class Orders
 
     public void setMeanOfPayment( int y) 
     {
-      System.out.println ("Choose the mean of payment: 1.Pay on Delivery , 2.Credit Card , 3.Debit Card
-      4.Paypal , 5.Bank Acount Deposit ")  
+      System.out.println ("Choose the mean of payment: 1.Pay on Delivery , 2.Credit Card , 3.Debit Card , 4.Paypal , 5.Bank Acount Deposit "); 
+      
 
       switch (y) 
       {
@@ -69,7 +69,7 @@ public class Orders
 
     public String getNewOrder() 
     {
-      return new_order 
+      return new_order ;
     }
 
     public boolean checkBalance ()
