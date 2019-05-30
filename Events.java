@@ -1,4 +1,4 @@
-import java.util.Scanner
+import java.util.Scanner;
 import java.util.Date;
 
 public class Events
@@ -6,8 +6,9 @@ public class Events
     private int seats;
     private String costumer_Data; 
     private String[] presentation ;
+    private int i;
     
-    Scanner s = new Scanner ( System.in)
+    Scanner s = new Scanner ( System.in);
 
     public Events (int s , String c , Scanner p)
     {
@@ -40,14 +41,14 @@ public class Events
 
     public int getFreeSeats() 
     {  
-        return seats   
+        return seats ;  
     }
 
     public String SetCostumerData() 
     {
         System.out.println("Enter the costumer's data: ");
         String costumer_Data = s.next();
-        System.out.println("Enter the number of seats that you need: ")
+        System.out.println("Enter the number of seats that you need: ");
         int seats = s.next();
     }
 
