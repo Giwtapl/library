@@ -1,4 +1,4 @@
-import java.util.Scanner
+import java.util.Scanner;
 import java.util.ArrayList;
 
 public abstract class Members
@@ -14,7 +14,7 @@ public abstract class Members
 
     static int currentIdNumber = 0;
 
-    Scanner s = new Scanner ( System.in )
+    Scanner s = new Scanner ( System.in );
 
     public Members(int Id , String l, String f , Double p) 
     {
@@ -45,11 +45,12 @@ public abstract class Members
         String first_name = s.next();
         if (this.last_name = l) 
         {
-            System.out.println ("The member you chose is removed.")   
+            System.out.println ("The member you chose is removed.");   
         }
-        else ( this.last_name != l)
+        else ( this.last_name != l );
         {
-            System.out.println("You did not choose a valid name.")
+            System.out.println("You did not choose a valid name.");
+        }
     }
 
     public int getMemberId()
@@ -75,11 +76,11 @@ public abstract class Members
         String first_name = s.next();
         if (this.last_name = l) 
         {
-            System.out.println ("There is already a member with that name.")   
+            System.out.println ("There is already a member with that name.");
         }
-        else ( this.last_name != l)
+        else ( this.last_name != l);
         {
-            System.out.println("You have to get a membership card.")
+            System.out.println("You have to get a membership card.");
         }
     }
 
