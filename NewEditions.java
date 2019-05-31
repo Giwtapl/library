@@ -10,37 +10,36 @@ public class NewEditions extends Notification
 	private ArrayList<String> BookEdition[] = new ArrayList<String>();
 	
 	
-    public void checkNewEditions()
-    {
-        //Show the new editions of books
+  public void checkNewEditions()
+  {
+    //Show the new editions of books
         
-        for (int i=0; i<BookEdition[].size(); i++)
-        {
-            System.out.println(BookEdition[i].bookName + "\t\t" + BookEdition[i].authorName + "\t\t" + BookEdition[i].publisherName + "\t\t" + 
-            BookEdition[i].bookPrice + "\t\t" + BookEdition[i].grades"\n");
+    for (int i=0; i<BookEdition[].size(); i++);
+    {
+      System.out.println(BookEdition[i].bookName + "\t\t" + BookEdition[i].authorName + "\t\t" + BookEdition[i].publisherName + "\t\t" + BookEdition[i].bookPrice + "\t\t" + BookEdition[i].grades"\n");
 		}
 	}
     
-    public void set_a_book(string newbook)
-    {
+  public void set_a_book(string newbook)
+  {
 		BookEdition[i].bookName = newbook;
 	}
 	
-    public boolean check_list()
-    {
+  public boolean check_list()
+  {
 		if(BookEdition[i].bookName = newbook)
 			return true;
 		else
 			return false;
 	}
 	
-    public int getbookID()
-    {
+  public int getbookID()
+  {
 		return bookID;
 	}
 	
-    public void validate_addition()
-    {
+  public void validate_addition()
+  {
 		System.out.println("Adding a book.");
 		System.out.println("Make an new Order.");
 	}
