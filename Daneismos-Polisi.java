@@ -28,7 +28,7 @@ public class Daneismos-Polisi
 			return true;
         else if (selling=only_daneismos)
         {
-		    System.out.println("Proorizetai mono gia daneismo")
+		    System.out.println("Proorizetai mono gia daneismo");
         }
         else
             points=ponts+5;
@@ -91,6 +91,4 @@ public class Daneismos-Polisi
     {
         return completion_message;
     }
-}
-	
-		
+}		
