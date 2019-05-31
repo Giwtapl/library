@@ -46,7 +46,7 @@ public class Epistrofes
 
     public void increase_stock(int count)
     {
-        count=count+1
+        count=count+1;
     }
 
     public text get_successreturn_message()
