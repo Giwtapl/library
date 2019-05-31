@@ -11,10 +11,9 @@ public class BorrowedBooks extends Notification
     {
 		//searching borrowed books
 		
-        for (int i=0; i<BorrowedBooks[].size(); i++)
+        for (int i=0; i<BorrowedBooks[].size(); i++);
         {
-            System.out.println(BorrowedBooks[i].bookID + "\t\t" + BorrowedBooks[i].last_name + "\t\t"+ BorrowedBooks[i].fisrt_name + 
-            "\t\t" + BorrowedBooks[i].dateofborrowing "\t\t" + BorrowedBooks[i].days "\n");
+            System.out.println(BorrowedBooks[i].bookID + "\t\t" + BorrowedBooks[i].last_name + "\t\t"+ BorrowedBooks[i].fisrt_name + "\t\t" + BorrowedBooks[i].dateofborrowing "\t\t" + BorrowedBooks[i].days "\n");
 	    }
     }
 	
@@ -33,7 +32,7 @@ public class BorrowedBooks extends Notification
 	
     public void decreasePoints()
     {
-        for (int i=0; i<BorrowedBooks[].size(); i++)
+        for (int i=0; i<BorrowedBooks[].size(); i++);
         {
             if(BorrowedBooks[i].days > 15)
             {
