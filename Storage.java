@@ -37,8 +37,7 @@ public class Storage
 	
                 for (int i=0; i<BookStocks[].size(); i++)
                 {
-                    System.out.println(BookStocks[i].bookID + "\t\t" + BookStocks[i].category + "\t\t" + BookStocks[i].title + "\t\t" + 
-                    BookStocks[i].author + "\t\t" + BookStocks[i].dateofissue + "\t\t" + BookStocks[i].bookcount"\n");
+                    System.out.println(BookStocks[i].bookID + "\t\t" + BookStocks[i].category + "\t\t" + BookStocks[i].title + "\t\t" + BookStocks[i].author + "\t\t" + BookStocks[i].dateofissue + "\t\t" + BookStocks[i].bookcount"\n");
                 }
 		    }
 	
@@ -116,11 +115,11 @@ public class Storage
                     if(BookStocks[i].bookID = book)
                     {
 					    BookStocks[i].bookcount--;
-					    System.out.println("Validate removal")
+					    System.out.println("Validate removal");
 				    }
                     else 
                     {
-					    System.out.println("There is no such a book.")
+					    System.out.println("There is no such a book.");
 				    }
                 }
             }
