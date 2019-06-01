@@ -4,66 +4,108 @@ import java.util.Scanner;
 
 public class Library
 {
-    public static void main(String[] args) 
-    {
-		Scanner input = new Scanner(System.in);
-		System.out.println("********************Welcome to the Student Library!********************");
-        System.out.println("              Please Select From The Following Options:               ");
-        System.out.println("**********************************************************************");
-        books nb= new books();
-        members nbMember= new Members();
-        
-        int choice;
+	public static void main(String[] args) 
+	{
 
-        do
-        {
-	        nb.dispMenu();
-	        choice=input.next.Int();
-	
-            switch(choice)
-            {
-		        case 1:
-		        book b=new book();
-		        nb.Storage(b);
-		        break;
+		Scanner in = new Scanner(System.in);
 		
-		        case 2:
-		        nb.NewEditions();
-		        break;
+		// create a new member and a new book from storage
+		Members nbMember = new Members();
+		Storage book = new Storage();
 		
-		        case 3:
-		        nb.BorrowedBooks();
-		        break;
+		int menuItem;
+		boolean quit = false;
 		
-		        case 4:
-		        nb.Daneismos-Polisi();
-		        break;
+		do
+		{
+			System.out.println("--------------------------------------------");
+		    System.out.println("|         Welcome to our library!          |");
+		    System.out.println("|------------------------------------------|");
+		    System.out.println("|   Please Select From The Menu Options:   |");
+		    System.out.println("|------------------------------------------|");
 		
-		        case 5:
-		        nb.Epistrofes();
-		        break;
 		
-		        case 6:
-		        nb.Orders();
-		        break;
-		
-		        case 7:
-		        member m= new Member();
-		        nbMember.Members(m);
-		        break;
-		
-		        case 8:
-		        nbMember.Events();
-		        break;
-		
-		        case 9:
-		        nbMember.Notifications();
-		        break;
-		
-		        default:
-		        System.out.println("Choice should be between 0 to 9.");
+			System.out.println("Choose a menu item ");
+			menuItem = in.nextInt();
+
+
+			 switch (menuItem) 
+			 {
+				
+               case 1:
+
+					nbMember.checkMemberData();					
+
+                     break;
+
+               case 2:
+
+                     book.check_storage();
+
+                     break;
+
+               case 3:
+
+                     book.check_selling();
+                    
+                     break;
+
+               case 4:
+
+                    Notification not = new Notification();
+					
+					searchnot = input.nextInt();
+
+						switch(searchnot)
+						{
+
+							case 1:
+								not.checkNewEditions();
+							break;
+                    
+							case 2:
+								not.checkBorrowedBooks();
+							break;
+						}	
+					
+					break;					
+
+               case 5:
+
+                     Orders order = new Orders();
+					 order.checkBookList();
+
+                     break;
+					 
+               case 6:
+
+						Events event = new Events();
+						event.searchEvents();
+                  
+					break;
+				   
+               case 7:
+
+						Epistrofes epvivliou = new Epistrofes();
+						epvivliou.check_aitia();
+
+                   break;
+
+               case 0:
+
+                     quit = true;
+
+                     break;
+
+               default:
+
+                     System.out.println("Invalid choice. Choose an integer between 0 and 7");
+
             }
-        }
-        while (choice!=0);
-    }
+	
+		}
+		while (!quit);
+	
+	}
+	
 }
