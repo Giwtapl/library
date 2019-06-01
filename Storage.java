@@ -30,7 +30,7 @@ public class Storage
 
     switch(choice)
     {
-	    case:1 //search storage
+	    case:1 
 
             public void loadinglist()
             {
